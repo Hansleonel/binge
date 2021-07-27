@@ -14,9 +14,11 @@ class MyApp extends StatelessWidget {
       routes: {
         'welcome': (BuildContext context) => WelcomeScreen(),
         'login': (BuildContext context) => LoginScreen(),
+        'createAccount': (BuildContext context) => CreateAccountScreen()
       },
       theme: ThemeData(
           primaryColor: Colors.yellow[600],
+          buttonColor: Colors.teal[300],
           accentColor: Colors.teal[300],
           floatingActionButtonTheme:
               FloatingActionButtonThemeData(backgroundColor: Colors.teal[300])),

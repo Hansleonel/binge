@@ -14,17 +14,35 @@ class WelcomeScreen extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, 'createAccount');
+                  },
+                  style: TextButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(24.0)),
+                      padding: EdgeInsets.only(
+                          left: 96, right: 96, top: 16, bottom: 16),
+                      backgroundColor: Colors.deepOrange),
+                  child: Text(
+                    'CREA TU CUENTA',
+                    style: TextStyle(color: Colors.white),
+                  )),
+              SizedBox(
+                height: 32.0,
+              ),
+              TextButton(
+                  onPressed: () {
                     Navigator.pushNamed(context, 'login');
                   },
                   style: TextButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(24.0)),
-                      padding: EdgeInsets.all(14.0),
-                      backgroundColor: Colors.deepOrange),
+                      padding: EdgeInsets.only(
+                          left: 96, right: 96, top: 16, bottom: 16),
+                      backgroundColor: Colors.teal[300]),
                   child: Text(
-                    'Crear Cuenta',
+                    'INICIAR SESIÓN',
                     style: TextStyle(color: Colors.white),
-                  ))
+                  )),
             ],
           ),
         ),

@@ -7,6 +7,10 @@ class LoginScreen extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0.0,
+        ),
         backgroundColor: Colors.white,
         body: Center(
           child: Column(
