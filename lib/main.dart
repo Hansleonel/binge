@@ -1,3 +1,4 @@
+import 'package:binge/screens/seen_content_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'package:binge/screens/screens.dart';
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'welcome': (BuildContext context) => WelcomeScreen(),
         'login': (BuildContext context) => LoginScreen(),
-        'createAccount': (BuildContext context) => CreateAccountScreen()
+        'createAccount': (BuildContext context) => CreateAccountScreen(),
+        'seenContent': (BuildContext context) => SeenContent()
       },
       theme: ThemeData(
           primaryColor: Colors.yellow[600],
